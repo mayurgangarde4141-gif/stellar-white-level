@@ -1,0 +1,163 @@
+/* ===== GLOBAL BACKGROUND ===== */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: white;
+}
+
+
+/* ===== MAIN CONTAINER ===== */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* ===== WALLET CARD ===== */
+
+.wallet-card {
+  width: 420px;
+  padding: 35px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.wallet-card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ===== TITLE ===== */
+
+.wallet-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #4dffb8;
+}
+
+
+/* ===== BUTTONS ===== */
+
+.wallet-btn {
+  width: 160px;
+  padding: 12px;
+  margin: 6px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transition: 0.25s ease;
+}
+
+.wallet-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+
+/* ===== ADDRESS DISPLAY ===== */
+
+.wallet-address {
+  margin-top: 18px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+
+/* ===== BALANCE DISPLAY ===== */
+
+.wallet-balance {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #38f9d7;
+  font-weight: bold;
+}
+
+
+/* ===== INPUT FIELDS ===== */
+
+.wallet-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.wallet-input::placeholder {
+  color: #cfcfcf;
+}
+
+
+/* ===== STATUS MESSAGE ===== */
+
+.wallet-status {
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffd166;
+}
+
+
+/* ===== TRANSACTION HISTORY BOX ===== */
+
+.history-box {
+  margin-top: 25px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px;
+  border-radius: 15px;
+}
+
+.history-box h3 {
+  margin-bottom: 12px;
+  color: #ffd166;
+}
+
+
+/* ===== SINGLE TRANSACTION CARD ===== */
+
+.history-item {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.history-item:hover {
+  transform: scale(1.02);
+}
+
+
+/* ===== HASH LINK ===== */
+
+.history-item a {
+  color: #4cc9f0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.history-item a:hover {
+  text-decoration: underline;
+}
